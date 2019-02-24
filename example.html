@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>BeautiAlert </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <style>
+        .alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    border-color: #D32F2F;
+}
+</style>
+</head>
+
+<body>
+    <div id="Test"></div>
+    <input type="button" onclick="Init()" />
+    <script>
+        function Init() {
+            var sun = new BeautiAlert("Test");
+            sun.Init("This is a test message", "information");
+        }
+    </script>
+    <script src="BeautiAlert.js"></script>
+</body>
+
+</html>
